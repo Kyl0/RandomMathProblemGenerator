@@ -1,0 +1,5 @@
+=================================================================
+Starting NumberGenerator Class Unit Test: 
+Returning integers from the digits array: 
+1 7 
+Number when digits are combined: 17
