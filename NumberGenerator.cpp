@@ -11,6 +11,7 @@
 
 NumberGenerator::
 NumberGenerator( int n ){
+    if( n > 5 ) fatal("too many digits");
     nDigits = n;
     digits = new int[nDigits];
     srand( ( unsigned int ) time( NULL ) );

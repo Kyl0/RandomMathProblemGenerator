@@ -24,7 +24,7 @@ private:
 public:
     Problem( double n1 = 0.0, double n2 = 0.0 );
     ~Problem() = default;
-    void rngSymbol() { sym = symbolEnum( rand() % 6 ); };
+    void rngSymbol() { sym = symbolEnum( rand() % 5 ); };
     symbolEnum getSym() { return sym; };
     void calcSln();
     double getSln() { return solution; };

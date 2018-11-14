@@ -15,7 +15,7 @@
 
 class NumberGenerator{
 private:
-    int nDigits;
+    int nDigits;    // should not be greater than 5
     int* digits;
     double number = 0.0;    //number when digits are combined
     
@@ -25,7 +25,7 @@ public:
     ostream& print( ostream& out ) const;
     void rng();
     void combineDigits();
-    int getNumber() { return number; };
+    double getNumber() { return number; };
 };
 
 inline ostream& operator << ( ostream& out, NumberGenerator& ng ) {

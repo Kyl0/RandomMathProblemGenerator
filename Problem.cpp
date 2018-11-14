@@ -15,10 +15,12 @@ Problem( double n1, double n2 ){
     num1 = n1;
     num2 = n2;
     srand( ( unsigned int ) time( NULL ) );
+    calcSln();
 }
 //------------------------------------------------------------------------------
 void Problem::
 calcSln(){
+    rngSymbol();
     switch(sym){
         case ADD:
             solution = num1 + num2;

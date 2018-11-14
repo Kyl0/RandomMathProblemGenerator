@@ -7,8 +7,8 @@
 // Please enter your own system, name, class, and printer stream name.
 // ---------------------------------------------------------------------------
 #pragma once
-#define NAME    "Kyle Jordan"
-#define CLASS   "CSCI 4526"
+#define NAME    "John Doe"
+#define CLASS   "****"
 
 #include <iostream>
 #include <cstdarg>     // for functions with variable # of arguments

@@ -8,21 +8,23 @@
 //
 #define TEST1 "test1.txt"
 #define TEST2 "test2.txt"
+#define TEST3 "test3.txt"
 
-#include "tools.hpp"
-#include "NumberGenerator.hpp"
-#include "Problem.hpp"
+#include "tools.hpp" //Dr. Fischer's tools; uses fatal() and bye() functions
+#include "Controller.hpp"
 #include <fstream>
 #include <string>
 
 void numGenTest();
 void problemUnitTest();
+void controllerUnitTest();
 
 int main(int argc, const char * argv[]) {
-    //banner();
-    
     //numGenTest();
-    problemUnitTest();
+    //problemUnitTest();
+    //controllerUnitTest();
+    Controller c;
+    c.run(cout);
     
     bye();
 }
@@ -84,4 +86,11 @@ problemUnitTest(){
     fs << "Solution: " << p.getSln() << endl;
     
     fs.close();
+}
+
+void
+controllerUnitTest(){
+    Controller c(3);
+    c.run(cout);
+    
 }
